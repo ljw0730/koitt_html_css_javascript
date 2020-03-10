@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table</title>
+		<style type="text/css">
+			/* text-align : 표 글자 정렬 left, right, center, justify */
+			/* border-collapse : 표의 선을 하나로 합침. 칸과 칸 사이의 간격 없애기*/
+			table{text-align:center;
+				  border-collapse:collapse;
+				  border-top:4px solid #7b8290;
+				  }
+			thead{background: #f5f5f5;}
+			th{padding: 14px 0px 13px 0px;
+			   border-bottom:1px solid #d4d7db;
+			   border-right:1px solid #eaebed;
+			   }
+			td{padding: 14px 15px 13px 0px;
+			   color: #454545;
+			   border-bottom:1px solid #d4d7db;
+			   border-right:1px solid #eaebed;
+			   }  
+			.Last{border-right:0px}
+		</style>
+
+	</head>
+	<body>
+		<h4>추가 인원 Extra Person</h4>
+		
+		<!-- <figure> 표의 위나 아래에 제목표시 -->
+		<!-- 닫는거는 </table> 아래에 있음 -->
+		<figure>
+		
+		<table>
+			<!-- <colgroup> <col> 열끼리 묶어 스타일 정렬하는 태그 -->
+			<colgroup>
+				<col width=180px>
+				<col width=280px>
+				<col width=190px>
+				<col width=190px>
+				<col width=160px>	
+			</colgroup>
+		
+			<!-- <caption> 맵위 가운데 정렬로 제목 넣기 -->
+			<caption>추가 인원 Extra Person</caption>
+			
+			<thead>
+				<tr>
+					<th colspan="2" rowspan="2">
+						구분
+					</th>
+					<th colspan="2">정기 추가요금(1인 1박당)</th>
+					<th class="Last" rowspan="2">추가인원</th>
+				</tr>
+				<tr>
+					<th>자진신고</th>
+					<th>미신고 적발시</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="9">리조트</td>
+					<td>패밀리</td>
+					<td rowspan="3">5,500원</td>
+					<td rowspan="3">11,000원</td>
+					<td class="Last">2인</td>
+				</tr>
+				<tr>
+					<td>스위트</td>
+					<td class="Last">3인</td>
+				</tr>
+				<tr>
+					<td>골드스위트</td>
+					<td class="Last">3인</td>
+				</tr>
+				<tr>
+					<td>패밀리(온돌)</td>
+					<td rowspan="2">5,500원</td>
+					<td rowspan="2">11,000원</td>
+					<td class="Last">2인</td>
+				</tr>
+				<tr>
+					<td>스위트(온돌)</td>
+					<td class="Last">2인</td>
+				</tr>
+				<tr>
+					<td>패밀리</td>
+					<td rowspan="2">5,500원</td>
+					<td rowspan="2">11,000원</td>
+					<td class="Last">2인</td>
+				</tr>
+				<tr>
+					<td>스위트</td>
+					<td class="Last">3인</td>
+				</tr>
+				<tr>
+					<td>스위트(취사형)</td>
+					<td rowspan="2">5,500원</td>
+					<td rowspan="2">11,000원</td>
+					<td class="Last">3인</td>
+				</tr>
+				<tr>
+					<td>스위트(클린형)</td>
+					<td class="Last">3인</td>
+				</tr>
+				
+				
+				<tr>
+					<td rowspan="3">호텔</td>
+					<td>슈페리얼</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="Last" rowspan="3">더블&싱글 : 1인<br/>더블&더블 : 2인</td>
+				</tr>
+				<tr>
+					<td>디럭스</td>
+					<td>-</td>
+					<td class="Last">-</td>
+				</tr>
+				<tr>
+					<td>디럭스VIEW</td>
+					<td>-</td>
+					<td class="Last">-</td>
+					
+				</tr>
+				
+				
+				<tr>
+					<td rowspan="3">노블리안</td>
+					<td>실버스위트</td>
+					<td rowspan="3">5,500원</td>
+					<td rowspan="3">11,000원</td>
+					<td class="Last" rowspan="3">3인</td>
+				</tr>
+				<tr>
+					<td class="Last">골드스위트</td>
+				</tr>
+				<tr>
+					<td class="Last">로얄스위트</td>
+					
+				</tr>
+			</tbody>
+			
+			
+		</table>
+		<!-- <figure> 표의 위나 아래에 제목펴시 -->
+		<!-- <figcaption> 표의 위나 아래에 제목펴시 -->
+		 	<figcaption>
+		 		<p>비발디파크 숙박안내</p>
+		 	</figcaption>
+		</figure>
+	</body>
+</html>

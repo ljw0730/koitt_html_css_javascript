@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ul_ol</title>
+		<style type="text/css">
+			div{width:100%;
+				border:1px solid #333333;
+			}
+			/* disc(속이찬 원형), circle(속이빈 원형), square(사각형), none(형태없음) */
+			/*ul{list-style-type:circle}*/
+			#s01{list-style-type:disc}
+			#s02{list-style-type:circle}
+			#s03{list-style-type:square}
+			#s04{list-style-type:none}
+			/* padding 안쪽에 여백을 준다.*/
+			img{margin-right:10px; padding-bottom:7px}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!-- 순서 없는 목록 -->
+			<!-- 각 항목앞에 불릿이 붙는다. -->
+			<ul id = "s01">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ul>
+			<ul id = "s02">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ul>
+			<ul id = "s03">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ul>
+			<ul id = "s04">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ul>
+			<ul id = "s04">
+				<li><img src="images/squar_bullet.gif">구글</li>
+				<li><img src="images/squar_bullet.gif">네이버</li>
+				<li><img src="images/squar_bullet.gif">다음</li>
+				<li><img src="images/squar_bullet.gif">네이트</li>
+			</ul>
+			
+			<!-- 순서 있는 목록 -->
+			<!-- type : 불릿 앞의 숫자조종 / start : 시작번호 수정 / reversed : 역순 -->
+			<ol type="A">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ol>
+			<ol type="a">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ol>
+			<ol type="I">
+				<li>구글</li>
+				<li>네이버</li>
+				<li>다음</li>
+				<li>네이트</li>
+			</ol>
+			<ol start="8">
+				<li >위메프</li>
+				<li>지마켓</li>
+				<li>옥션</li>
+				<li>쿠팡</li>
+				
+			</ol>
+		
+		</div>
+	</body>
+</html>

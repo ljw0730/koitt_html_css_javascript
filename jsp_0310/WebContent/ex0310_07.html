@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table</title>
+		<style type="text/css">
+			/* text-align : 표 글자 정렬 left, right, center, justify */
+			/* border-collapse : 표의 선을 하나로 합침. 칸과 칸 사이의 간격 없애기*/
+			table{text-align:center;
+				  border-collapse:collapse;
+				  border-top:4px solid #7b8290;
+				  border-left:0px;
+				  }
+			thead{background: #f5f5f5;}
+			th{padding: 14px 0px 13px 0px;
+			   border-bottom:1px solid #d4d7db;
+			   border-right:1px solid #eaebed;
+			   }
+			td{padding: 14px 15px 13px 0px;
+			   color: #454545;
+			   border-bottom:1px solid #d4d7db;
+			   border-right:1px solid #eaebed;
+			   }
+			.Last{border-right:0px}
+						
+		</style>
+
+	</head>
+	<body>
+		<h4>객실구성</h4>
+		 <table>
+			<thead>	 
+				 <tr>
+				 	<th>구분</th>
+				 	<th>면적</th>
+				 	<th colspan="2">객실 타입</th>
+				 	<th>VIEW</th>
+				 	<th>실내구성</th>
+				 	<th class="Last">일반요금</th>
+				 </tr>
+		 	</thead>
+		 	<tbody>
+		 		<tr>
+		 			<td rowspan="3">슈페리어</td>
+		 			<td rowspan="3">32.17㎡</td>
+		 			<td>트윈(싱글+싱글)</td>
+		 			<td>2실</td>
+		 			<td rowspan="3">슬로프 & 오션뷰</td>
+		 			<td rowspan="3">침실 + 욕실</td>
+		 			<td class="Last" rowspan="3">360,000원</td>
+		 		</tr>
+		 		
+		 		<tr>
+		 			<td>킹 트윈(더블+싱글)</td>
+		 			<td>59실</td>
+		 		</tr>
+		 		<tr>
+		 			<td>패밀리 트윈(더블+더블)</td>
+		 			<td>2실</td>
+		 		</tr>
+		 		
+		 		
+		 	</tbody>
+		 </table>
+		 <p>※홈페이지 예약시 할인가 적용 / 타입별 객실료 적용</p> 
+		 <p>※예약문의 : 033)439-4702</p>
+		 
+		
+		
+	</body>
+</html>
