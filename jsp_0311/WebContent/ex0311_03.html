@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>사진부분 링크 만들기</title>
+		<style type="text/css">
+			/*img{width:800px;}*/
+		</style>
+	</head>
+	<body>
+		<!-- usemap : 맵을 사용한다.-->
+		<img alt="이벤트" src="images/event01.jpg" usemap="#event">
+		<map name="event">
+			<!-- area 사진에서 구역을 지정하여 링크로 만든다. -->
+			<!-- shape="rect" 네모 영역을 만들겠다. / circle - 원형 영역을 만든다. -->
+			<!--        poly - 다각형 영역을 만든다. -->
+			<!-- coords : 구역을 정한다. 네모의 경우 왼쪽위 꼭지점과 오른쪽아래 꼭지점 -->
+			<!--          원의 경우 원점이랑 반지름을 알면된다. -->
+			<!--          다각형의 경우 각 꼭지점을 알아야 한다. -->
+			<area alt="파닭페이지" shape="rect" coords="82,806,458,1186"
+				href="https://nenechicken.com/17_new/sub_menu02.asp?SSUBID=1&STOCK_ID=30063&ORDERID=" target="_blank" >
+			<area alt="쇼킹핫" shape="circle" coords="670,989,190"
+				href="https://nenechicken.com/17_new/sub_menu02.asp?SSUBID=1&STOCK_ID=30599&ORDERID=" target="_blank">
+			<area alt="치즈스노우" shape="poly" coords="976,874,1153,872,1262,1025,1175,1110,1010,1115,877,1030"
+				href="https://nenechicken.com/17_new/sub_menu02.asp?SSUBID=1&STOCK_ID=30037&ORDERID=" target="_blank">
+		</map>
+	</body>
+</html>

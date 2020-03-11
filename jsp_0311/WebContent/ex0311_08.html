@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>구글</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<form action="http://www.naver.com" name="join" method="get">
+			<label>아이디</label><input type="text" name="m_id" /><br/>
+			<label>패스워드</label><input type="password" name="m_pw" /><br/>
+		 	<!-- readonly : 말그래도 읽기밖에 안된다. -->
+			<label>레벨</label><input type="text" name="level" value="vip회원" readonly /><br/>
+			<!-- 전송 클릭시 입력란에 @ 가 있는지 확인해서 알려준다. -->
+			<label>이메일</label><input type="email" name="m_mail" /><br/>
+			<!-- hidden 화면상에 보이지는 않고 서버에 전송 시 value 값을 보낸다. -->
+			<input type="hidden" name="ip" value="192.168.0.154" />
+			
+			<br/>
+			
+			<input type="submit" value="전송" />
+			<input type="reset" value="취소" />
+			
+		</form>
+		
+	</body>
+</html>
