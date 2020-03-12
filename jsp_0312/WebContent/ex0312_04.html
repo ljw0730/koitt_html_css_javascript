@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			h2{width:1120px; height:22px; padding:50px 0px 20px;
+			   border-bottom:2px solid black; font-size:22px;
+			   line-height:22px; font-weight:600; letter-spacing:-0.05em;
+			   margin:0 auto;
+			}
+			span{color:#444; font-size:18px; font-weight:600; letter-spacing:-0.05em;
+				/* span은 width 가 먹히지 않는다. 먹히게 하려면 display:inline-block 을 넣어야 한다.*/
+				/* 인라인을 블록으로 바꾼다. */
+				width:400px; display:inline-block;
+			}
+			ul{list-style-type:none; width:800px; margin:0 auto; 
+			   padding-top:30px;
+			}
+			li{height:50px; font-size:18px;}
+			
+		</style>
+	</head>
+	<body>
+		<h2>이용약관 동의(필수)</h2>
+		<form name="" action="" method="">
+			<ul>
+				<li>
+					<span>남양아이닷컴 이용약관</span>
+					<input type="radio" name="radio1" value="yes" /><label>동의</label>
+					<input type="radio" name="radio1" value="no" /><label>비동의</label>
+				</li>
+				<li>
+					<span>개인정보보유 및 이용기간 선택</span>
+					<input type="radio" name="radio2" value="1" /><label>1년</label>
+					<input type="radio" name="radio2" value="3" /><label>3년</label>
+					<input type="radio" name="radio2" value="5" /><label>5년</label>
+				</li>
+				<li>
+					<span>이름</span> <input type="text" />
+				</li>
+				<li>
+					<span>아이디</span> <input type="text" />
+				</li>
+				<li>
+					<span>패스워드</span> <input type="password" />
+				</li>
+				<li>
+					<span>패스워드확인</span> <input type="password" />
+				</li>
+				<li>
+					<span>생년월일</span> <input type="text" />
+				</li>				
+				<li>
+					<span>성별</span>
+					<select>
+						<!-- hidden을 통해 select에서 placeholder 의 효과를 낼 수 있다. -->
+						<option value="" hidden>성별</option>
+						<option value="male">남성</option>
+						<option value="female">여성</option>
+					</select>
+				</li>
+			
+				<li>
+					<span>하고싶은 말</span><br/>
+					<textarea rows="7" cols="83"></textarea>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

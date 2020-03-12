@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+	h2{width:1120px; height:22px; padding:50px 0px 20px;
+	   border-bottom:2px solid black; font-size:22px;
+	   line-height:22px; font-weight:600; letter-spacing:-0.05em;
+	   margin:0 auto;
+	}
+	span{color:#444; font-size:18px; font-weight:600; letter-spacing:-0.05em;
+		/* span은 width 가 먹히지 않는다. 먹히게 하려면 display:inline-block 을 넣어야 한다.*/
+		width:400px; display:inline-block;
+	}
+	ul{list-style-type:none; width:800px; margin:0 auto; 
+	   padding-top:30px;
+	}
+	li{height:50px; font-size:18px;}
+			

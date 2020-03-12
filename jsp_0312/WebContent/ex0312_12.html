@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>인라인/블록/인라인-블록</title>
+		<style type="text/css">
+			div{width:300px; height:300px;
+				/* div는 기본적으로 블록 방식으로 아래로 이어진다. */
+				/* display:inline; 를 하면 인라인 방식으로 바뀌면서 */
+				/* 너비 높이가 적용이 안된다. */
+				display:inline;
+			}
+			#d01{background: red;}
+			#d02{background: green;}
+			#d03{background: blue;}
+			
+			/* span은 기본적으로 인라인 방식으로 옆으로 이어진다.*/
+			/* display:block; 을하게 되면 블록방식으로 바뀌면서 */
+			/* 너비 높이가 적용이 된다. */
+			span{display:block; width:300px; height:300px;}
+			#s01{background: pink;}
+			#s02{background: yellow;}
+			/* display:none; 완전히 사라진다. 보이는것 뿐만아니라 공간도 사라진다. */
+			#s02:hover{background: yellow; display:none;}
+			#s03{background: gray;}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="d01">div1</div>
+		<div id="d02">div2</div>
+		<div id="d03">div3</div>
+		
+		<span id="s01">span1</span>
+		<span id="s02">span2</span>
+		<span id="s03">span3</span>
+	</body>
+</html>

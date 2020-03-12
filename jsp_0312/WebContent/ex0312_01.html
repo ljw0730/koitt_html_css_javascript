@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form name="join" action="" method="post">
+			<!-- for - 라벨을 클릭하면 해당 입력창에 포커싱된다. -->
+			<label for="m_id">아이디</label><input id="m_id" type="text" /> <br/>
+			<label for="m_name">이름</label><input id="m_name" type="text" /> <br/>
+			<label for="m_pw">비밀번호</label><input id="m_pw" type="password" /> <br/>
+			<label for="m_pw2">비밀번호확인</label><input id="m_pw2" type="password" /> <br/>
+			<label for="tel">휴대전화</label><input id="tel" type="tel" /> <br/>
+			<label for="email">이메일</label><input id="email" type="email" /> <br/>
+			<label for="r_id">추천인 아이디</label><input id="r_id" type="text" /> <br/>
+			
+			<br/>
+			<label for="order_num">주문수량</label>
+				<!-- type="number" - :  value 초기값 min 최소값 max 최대값 -->
+				<!-- 포커싱되면 위 아래 화살표가 나와 값을 변경 할 수 있다. -->
+				<input type="number" value="1" min="1" max="10" /> 개 <br/>
+			<label for="level">레벨</label>
+				<!-- type="range" : 가로 슬라이드 바 생성 -->
+				<input type="range" value="1" min="1" max="10" /> 레벨 <br/>
+			<label for="hobby">취미</label> <br/>
+				<!-- type="radio" : 라디오박스 생성 -->
+				<!-- 라디오박스 한 묶음에 name이 같아야함을 주의 -->
+				<!-- checked 를 넣으면 처음에 체크 되게끔한다. -->
+				<input type="radio" name="hobby" value="running" checked /> 달리기 <br/>
+				<input type="radio" name="hobby" value="music" /> 음악감상 <br/>
+				<input type="radio" name="hobby" value="movie" /> 영화감상 <br/>
+				<input type="radio" name="hobby" value="book" /> 독서 <br/>
+				<input type="radio" name="hobby" value="internet" /> 인터넷 <br/>
+			<label for="gender">성별</label>
+				<input type="radio" name="gender" value="male" checked /> 남자 &nbsp;&nbsp;
+				<input type="radio" name="gender" value="female" /> 여자 <br/>
+			
+		
+		</form>
+	
+	
+	</body>
+</html>
