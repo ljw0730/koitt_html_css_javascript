@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700&display=swap" rel="stylesheet">
+		<title>메인>AKBeauty</title>
+		<style type="text/css">
+			*{
+				margin:0px; padding:0px;
+				font-family: 'Noto Sans KR', sans-serif;
+			}
+			nav div{
+				width:100%; height:58px; 
+				border:1px solid #e5e5e5;
+				
+			}
+			#top{
+				width:100%; height:80px; margin-top:0px;
+				/* no-repeat : 이미지를 반복하지 않는다. */
+				 background-image: url("images/top_back.png");
+				 background-repeat: no-repeat;
+				 background-size: 100% 100%
+			}
+			#top_search {
+				width:1200px; height:93px;
+				box-sizing:border-box;
+				padding-top:30px;
+				margin : 0 auto;
+				border:none;
+			}
+			#top_search>img:nth-child(1) {
+				float: left;
+			}
+							
+			#top_search>form {
+				float: left;
+				width: 500px;
+				padding-left:70px;
+				padding-right:70px;
+			}
+			#top_search>form>input {
+				width: 350px; height:40px;
+				border:none;
+				border-bottom:1px solid black;
+				margin-left:30px;
+			}
+			#top_search>form>img {
+				
+				
+			}	
+			ul{
+				list-style-type: none; 
+			   width:1200px; margin: 0 auto;
+			}
+			li{
+			   font-size:18px; float:left; box-sizing:border-box;
+			   width:166px; height:58px; padding-top:14px;
+			   text-align: center;
+			   
+			}	/* display:block; */
+			a{
+				text-decoration: none; color:#000; padding-bottom:17px;
+			}
+			a:hover{
+				border-bottom:2px solid black; 
+			}	
+			section>div{
+				width:100%; height:650px; background-image: url("images/main01.jpg");
+				margin-top:0px;
+			}
+				
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="top"></div>
+			<div id="top_search">
+				<img alt="" src="images/logo-main.svg" />
+				<form action="">
+					<input type="text" />
+					<img alt="" src="images/icon_search.svg" />
+				</form>
+				<img alt="" src="images/icon_login.svg" />
+				<img alt="" src="images/icon_human.svg" />
+				<img alt="" src="images/icon_my_back.svg" />
+			</div>
+		</header>
+		<nav>
+		<div>
+			<ul>
+				<li><a href="https://www.akbeauty.co.kr/">브랜드</a></li>
+				<li><a href="https://www.akbeauty.co.kr/display/category/1">카테고리</a></li>
+				<li><a href="https://www.akbeauty.co.kr/display/category/best">BEST</a></li>
+				<li><a href="https://www.akbeauty.co.kr/channel">Channel AK</a></li>
+				<li><a href="https://www.akbeauty.co.kr/event">EVENT</a></li>
+				<li><a href="https://www.akbeauty.co.kr/review">REVIEW</a></li>
+			
+			</ul>
+		</div>
+		</nav>
+		<section>
+			<div></div>
+		</section>
+	</body>
+</html>

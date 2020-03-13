@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700&display=swap" rel="stylesheet">
+		<title>Position</title>
+		<style type="text/css">
+			div{
+				width:200px; height:200px;
+			}
+			#d01{
+				/* position:relative; 를 하면 현재를 기준점으로 #d01에 해당되는 부분이 음직일 수 있다. */
+				/* 기준점음 본인의 왼쪽 상단 이다. */
+				/* left:200px; 왼쪽에 200px공간을 만들겠다(오른쪽으로 200px이동) */
+				/* top:100px; 위에 100px 공간을 만들겠다.(아래쪽으로 100px 이동) */
+				position:relative; left:200px; top:100px;
+				background-color: yellow;
+			}
+			#d02{
+				background-color: green;
+			}
+			#d02_01{
+				/* position: fixed; 화면 그자리에 고정이 되어 스크롤을 움직여도 화면에 계속 나타난다. */
+				position: fixed; left: 300px;
+				background-color: pink;
+			}
+			#d03{
+				height:2000px;
+				position:relative;
+				background-color: red;
+			}
+			#d03_01{
+				/*position:absolute; 부모가 relative로 된 상태에서 */
+				/* 부모를 기준점으로 움직일 수 있다. */
+				position: absolute; left: 300px;
+				background-color: blue;
+			}
+				
+				
+		</style>
+	</head>
+	<body>
+		<div id="d01">div01</div>
+		<div id="d02">div02
+			<div id="d02_01">div02_01</div>
+		</div>
+		<div id="d03">div03
+			<div id="d03_01">div03_01</div>
+		</div>
+		
+		
+	</body>
+</html>

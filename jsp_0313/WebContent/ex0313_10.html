@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700&display=swap" rel="stylesheet">
+		<title>z-index</title>
+		<style type="text/css">
+			div{
+				width:200px; height:200px;
+			}
+			#d01{
+				position: relative;
+				/* z축을 기준으로 값이 클수록 앞으로 올라온다. */
+				/* position: relative; 이 선언되있어야 한다.*/
+				z-index:3;
+				background-color: yellow;
+			}
+			#d02{
+				position: absolute; left:50px;
+				z-index:2;
+				background-color: green;
+			}
+			#d03{
+				position: relative; top: -50px;
+				z-index:1;
+				background-color: red;
+			}
+				
+		</style>
+	</head>
+	<body>
+		<div id="d01">div01</div>
+		<div id="d02">div02</div>
+		<div id="d03">div03</div>
+		
+		
+	</body>
+</html>

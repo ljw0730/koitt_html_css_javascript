@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+*{
+	margin:0px; padding:0px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+nav div{
+	width:100%; height:58px; 
+	border:1px solid #e5e5e5;
+}
+#top{
+	width:100%; height:80px; margin-top:0px;
+	/* no-repeat : 이미지를 반복하지 않는다. */
+	 background-image: url("../images/top_back.png");
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%
+}
+#top_search {
+	width:1200px; height:93px;
+	box-sizing:border-box;
+	padding-top:30px;
+	margin : 0 auto;
+	border:none;
+}
+#top_search>img:nth-child(1) {
+	float: left;
+}
+				
+#top_search>form {
+	float: left;
+	width: 500px;
+	padding-left:70px;
+	padding-right:70px;
+}
+#top_search>form>input {
+	width: 350px; height:40px;
+	border:none;
+	border-bottom:1px solid black;
+	margin-left:30px;
+}
+#top_search>form>img {
+	
+	
+}	
+ul{
+	list-style-type: none; 
+   width:1200px; margin: 0 auto;
+}
+li{
+   font-size:18px; float:left; box-sizing:border-box;
+   width:166px; height:58px; padding-top:14px;
+   text-align: center;
+   
+}	/* display:block; */
+a{
+	text-decoration: none; color:#000; padding-bottom:17px;
+}
+a:hover{
+	border-bottom:2px solid black; 
+}	
+section>div:nth-child(1){
+	width:100%; height:120px; background-image: url("../images/image_subtile_event.png");
+	margin-top:0px;
+}
+section>div:nth-child(1)>p {
+	width: 100%; text-align: center;
+	font-size:50px; font-weight: bold;
+	line-height: 120px; color: white; 
+}
+section>div:nth-child(2){
+	width:100%; height:120px; margin-top:90px;
+	
+}
+section>div:nth-child(2)>ul{
+	width:520px; height:56px;
+	margin: 0 auto;
+	
+}
+section>div:nth-child(2)>ul>li{
+	width:240px; height:70px;
+	font-size: 24px; font-weight: 500;
+	border-bottom: 3px solid #e5e5e5;
+	margin-left:20px;
+}
+section>div:nth-child(2)>ul>li:hover {
+	border-bottom: 5px solid black;
+}
+
+#list01{
+	width:100%;
+}
+#list01>ul{
+	width:1200px; margin: 0 auto;
+}
+#list01>ul li {
+	box-sizing: border-box;
+	width:1202px; height:2260px;
+	border:1px solid black;
+	
+}
+#list01>ul li>div:nth-child(1) {
+	float:left;
+	box-sizing: border-box;
+	width:575px; height:412px;
+	border:1px solid black;
+	margin:0px 50px 0px 0px;
+}
+#list01>ul li>div:nth-child(2) {
+	float:left;
+	box-sizing: border-box;
+	width:575px; height:412px;
+	border:1px solid black;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
