@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 접두어를 안붙여도 되게 하는 js파일 -->
+		<script type="js/prefixfree.dynamic-dom.min.js"></script>
+		<title>트랜직션3 - animation</title>
+		<style type="text/css">
+			div{
+				width: 200px; height: 200px;
+			}
+			#d01 {
+				background: yellow;
+				animation-name:ch_back;
+				animation-duration:2s;
+				
+				/* 원래대로 돌아온다. */
+				animation-direction: alternate;
+				
+				/* 무한반복한다. */
+				animation-iteration-count:infinite;
+				
+				/* 한줄로도 가능 */
+				/* animation: ch_back 2s alternate infinite; */
+				
+				/* , 이용해 여러개를 작성 할 수 있다.*/
+				/* animation: ch_back 2s alternate infinite,
+							  ch_back 2s alternate infinite; */
+			}
+			@keyframes ch_back{
+				from {
+					backgound: yellow;
+				}
+				50% {
+					background: red;
+				}
+				to{
+					background: blue;
+					border-radius: 50%;
+					transform: scale(5);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="d01"></div>
+		
+	</body>
+</html>

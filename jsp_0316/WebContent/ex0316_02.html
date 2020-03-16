@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>그라데이션</title>
+		<style type="text/css">
+			*{margin:0px; padding:0px;}
+			div{
+				width:600px; height:400px;
+				background: blue;
+				/* background: -webkit-linear-gradient(left top, blue, white); */
+				/* -webkit- 크롬에서 */
+				/* linear-gradient 그라데이션을 그린다. */
+				/* left top, blue, white : 왼쪽 위에서 파랑색을 시작으로 흰색이 되도록 한다.*/
+				/* deg90 : 으로 해서 각도를 이용할수 있다. */
+				/* 이때 -webkit-을 안붙이면 시계 방향으로, 붙이면 반시계 방향으로 간다.  */
+				background: -webkit-linear-gradient(left top, blue, white);
+				
+				/* background: -webkit-linear-gradient(0deg, blue, white 30%, green); */
+				/* blue, white 30%, blue : 처음은 파랑으로 가다가 30%지점에서 흰색으로 하고 */
+				/* 다시 녹색으로 칠한다. */
+				
+				/* background: -webkit-radial-gradient(circle, white, yellow, blue); */ 
+				/* radial-gradient : 둥근형태로 그라데이션을 한다. */
+				/* circle, white, yellow, blue : 정원형태로 시작은 흰색 중간은 노랑색 끝은 파랑색으로 칠한다. */
+				/* cirrle를 빼거나 ellipse를 넣으면 타원으로 나온다. */
+			}
+			div:hover {
+				/* 아이콘 이미지를 하나하나 넣는게 아니라 하나의 이미지로 넣어두고 */
+				/* 위치값을 옮겨 이미지를 다르게 보이게 한다. */
+				background-position: -60px 0px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div>
+		
+		</div>
+		
+		
+	</body>
+</html>

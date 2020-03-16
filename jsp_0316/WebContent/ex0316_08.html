@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 접두어를 안붙여도 되게 하는 js파일 -->
+		<script type="js/prefixfree.dynamic-dom.min.js"></script>
+		<title>트랜직션</title>
+		<style type="text/css">
+			div{
+				width: 300px; height: 300px;
+				background: blue;
+				
+				/* transition-property: all; width, height, background 모두에 적용 */
+				transition-property: all;
+				/* width 변경시간은 2초, height 변경시간은 1초로 한다. */
+				transition-duration: 2s, 1s;
+				
+			}
+			div:hover {
+				width: 400px; height: 450px;
+				background: red;
+				border-radius: 150px;			
+			}
+			
+			#apple {
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="apple">
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>아이콘 메뉴 만들기</title>
+		<style type="text/css">
+			*{margin:0px; padding:0px;}
+			#icon_list{
+				width: 880px; height: 140px;
+				font-size: 15px;
+				margin: 0 auto;
+				list-style-type: none;
+			}
+			#icon_list li{
+				width: 110px; height:140px;
+				float: left;
+				box-sizing: border-box;
+			}
+			#icon_list li:nth-child(1) {
+				background: url("images/shinhan/ico_mypage01.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(1):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(1) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(2) {
+				background: url("images/shinhan/ico_mypage02.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(2):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(2) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(3) {
+				background: url("images/shinhan/ico_mypage03.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(3):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(3) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(4) {
+				background: url("images/shinhan/ico_mypage05.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(4):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(4) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(5) {
+				background: url("images/shinhan/ico_mypage04.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(5):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(5) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(6) {
+				background: url("images/shinhan/ico_loan04.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(6):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(6) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(7) {
+				background: url("images/shinhan/ico_center02.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(7):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(7) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			#icon_list li:nth-child(8) {
+				background: url("images/shinhan/ico_card04.png") no-repeat;
+				background-position: 25px 25px;
+			}
+			#icon_list li:nth-child(8):hover {
+				background-position: 25px -125px;
+			}
+			/* strong은 인라인 방식이므로 블록 방식으로 변경해야 한다. */
+			#icon_list li:nth-child(8) strong {
+				display: block;
+				color: #333;
+				text-align: center;
+				line-height: 2px;
+				margin-top:40px;
+				padding: 55px 0px 0px;		
+			}
+			
+			h3 {
+				width: 1080px; height: 80px;
+				font-size: 28px;
+				box-sizing: border-box;
+				padding: 40px 0px 0px;
+				margin: 0 auto;
+			}
+			#finance {
+				width: 1080px; height:160px;
+				list-style-type: none;
+				margin: 20px auto 0px;
+			}
+			#finance li {
+				width: 200px; height: 160px;
+				box-sizing: border-box;
+				float: left;
+				padding: 16px 20px 0px;
+				font-size: 15px;
+				border-radius: 10px;
+				margin: 0px 10px;
+				box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+			}
+			#finance li:nth-child(1) {
+				margin-left:0px;
+			}
+			#finance li:nth-child(5) {
+				margin-right:0px;
+			}
+			#finance li img {
+				width:50px; height:50px;
+			}
+			#finance li strong {
+				width:160px; height:25px;
+				display: block;
+				font-size: 18px;
+				color: #333;
+				font-weight: 700;
+				line-height: 1.4;
+				margin-top: 10px;
+			}
+			#finance li:nth-child(4) strong {
+				height: 50px;
+			}
+			#finance li span {
+				width:160px; height:22px;
+				font-size: 16px;
+				color: #666;
+				line-height: 1.4;
+			}
+			
+			
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<ul id="icon_list">
+			<li><strong>월별 명세서</strong></li>
+			<li><strong>이용내역</strong></li>
+			<li><strong>다음달결제예정</strong></li>
+			<li><strong>내가받은혜택</strong></li>
+			<li><strong>이용한도</strong></li>
+			<li><strong>이용금액결제</strong></li>
+			<li><strong>전자민원접수</strong></li>
+			<li><strong>카드발급조회</strong></li>
+		</ul>
+		
+		<h3>금융</h3>
+		<ul id="finance">
+			<li>
+				<img alt="나만의" src="images/shinhan/ico_a1.png" />
+				<strong>나만의</strong>
+				<span>금융혜택</span>
+			</li>
+			<li>
+				<img alt="나만의" src="images/shinhan/ico_a4.png" />
+				<strong>단기카드대출</strong>
+				<span>현금서비스</span>
+			</li>
+			<li>
+				<img alt="나만의" src="images/shinhan/ico_a2.png" />
+				<strong>장기카드대출</strong>
+				<span>카드론</span>
+			</li>
+			<li>
+				<img alt="나만의" src="images/shinhan/ico_a3.png" />
+				<strong>일부결제금액<br/>이월약적</strong>
+				<span>리볼빙</span>
+			</li>
+			<li>
+				<img alt="나만의" src="images/shinhan/ico_a5.png" />
+				<strong>맞춤대출</strong>
+				<span>즉시대출</span>
+			</li>
+		</ul>
+		
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>박스 겹치기</title>
+		<style type="text/css">
+			*{margin: 0px; padding: 0px;}
+			.box1{
+				width:100px; height:40px;
+				float: left;
+				background: yellow;
+				margin-right: 20px;
+				
+				/* 방법 1. position 이용 */
+				/* position: relative; 를 해야 움직일 수 있다. */ 
+				position: relative;
+				left: 50px; top: 20px;
+			}
+			
+			.box2{
+				width: 300px; height: 40px;
+				float: left;
+				background: blue;
+			}
+			div{
+				width: 300px; height: 50px;
+				border: 1px solid black;
+			}
+			
+			#d2{
+				position: absolute;
+				background: green;
+				left: 30px; top: 30px;
+			}
+			#d4-1{
+				position: absolute;
+				left: 50px;	
+			}
+						
+		</style>
+		
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div>1</div>
+		<div id="d2">2</div>
+		<div>3</div>
+		<div>4
+			<div id="d4-1">4-1</div>
+		</div>
+		<div>5</div>
+	</body>
+</html>

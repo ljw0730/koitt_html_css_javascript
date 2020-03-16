@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>박스 겹치기</title>
+		<style type="text/css">
+			*{margin: 0px; padding: 0px;}
+			div{
+				width: 500px; height: 500px;
+				border: 1px solid black;
+				
+			}
+			#d {
+				width: 50px; height: 50px;
+				background-color: #0094ff;
+				position: relative; left: 100px; top: 100px;
+			}
+			
+			#d01 {
+				position: absolute;
+				left:0px; top:0px;
+			}
+			#d02 {
+				position: absolute;
+				left:450px; top:0px;
+			}
+			#d03 {
+				position: absolute;
+				left:150px; top:150px;
+			}
+			#d04 {
+				position: absolute;
+				left:0px; top:450px;
+			}
+			#d05 {
+				position: absolute;
+				left:450px; top:450px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="d">
+			<div id="d01">1</div>
+			<div id="d02">2</div>
+			<div id="d03">3</div>
+			<div id="d04">4</div>
+			<div id="d05">5</div>
+		</div>
+		
+		
+	</body>
+</html>

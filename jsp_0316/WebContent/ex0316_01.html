@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>background-position</title>
+		<style type="text/css">
+			div{
+				width:40px; height:20px;
+				background-image: url("images/icon_top_menu.png");
+				background-repeat: no-repeat;
+				background-position: 0px 0px;	
+			}
+			div:hover {
+				/* 아이콘 이미지를 하나하나 넣는게 아니라 하나의 이미지로 넣어두고 */
+				/* 위치값을 옮겨 이미지를 다르게 보이게 한다. */
+				/* 움직일 방향에 -값을 넣어준다.*/
+				/* → 으로 가려면 x축에 - 값을 주고, ↓ 으로 가려면 y축에 -값을 넣어준다.*/
+				background-position: -60px 0px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div>
+		
+		</div>
+	</body>
+</html>

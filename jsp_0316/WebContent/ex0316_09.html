@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 접두어를 안붙여도 되게 하는 js파일 -->
+		<script type="js/prefixfree.dynamic-dom.min.js"></script>
+		<title>트랜직션2</title>
+		<style type="text/css">
+			div{
+				width: 100px; height: 100px;
+			}
+			#d01 {
+				background: yellow;
+				transition-property: all;
+				transition-duration: 2s;
+				/*linear : 변화속도를 일정하게 한다. */
+				transition-timing-function: linear;	
+			}
+			#d01:hover {
+				width: 300px;
+			}
+			
+			#d02 {
+				background: green;
+				transition-property: all;
+				transition-duration: 2s;
+				/*ease-in : 시작을 느리게 한다. */
+				transition-timing-function: ease-in;	
+			}
+			#d02:hover {
+				width: 300px;
+			}
+			
+			#d03 {
+				background: blue;
+				transition-property: all;
+				transition-duration: 2s;
+				/*ease-out : 느리게 끝난다. */
+				transition-timing-function: ease-out;	
+			}
+			#d03:hover {
+				width: 300px;
+			}
+			
+			#d04 {
+				background: red;
+				transition-property: all;
+				transition-duration: 2s;
+				/*ease-in-out : 느리게 시작하고 원래 속도로 갔다가 느리게 끝난다. */
+				transition-timing-function: ease-in-out;	
+			}
+			#d04:hover {
+				width: 300px;
+			}
+			
+			#d05 {
+				background: gray;
+				transition-property: all;
+				transition-duration: 2s;
+				/*ease : 처음에는 천천히 시작 점점 빨라지다가 마지막에는 천천히 끝난다. */
+				/* 기본값 */
+				transition-timing-function: ease;
+				/* 0.5초 있다가 시작한다. */
+				trasition-delay: 0.5s
+			}
+			#d05:hover {
+				width: 300px;
+			}
+			
+			div:hover {
+							
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="d01"></div>
+		<div id="d02"></div>
+		<div id="d03"></div>
+		<div id="d04"></div>
+		<div id="d05"></div>
+		
+	</body>
+</html>
