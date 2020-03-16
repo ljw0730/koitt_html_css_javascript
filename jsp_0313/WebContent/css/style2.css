@@ -167,6 +167,44 @@ article>div>p {
 	padding-top: 10px;
 }
 
+/* 표 페이지 이동 */
+#art_num {
+	width: 220px; height: 35px;
+	margin: 0 auto;
+	position: relative; top: 630px;
+}
+#art_num strong {
+	display: inline-block;
+	width: 36px; height: 35px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	line-height: 32px;
+	border: 1px solid #989898;
+}
+#art_num strong:nth-child(1) {
+	background: url(../images/img/paging_first.png) no-repeat;
+}
+#art_num strong:nth-child(2) {
+	background: url(../images/img/paging_prev.png) no-repeat;
+}
+#art_num strong:nth-child(4) {
+	background: url(../images/img/paging_next.png) no-repeat;
+}
+#art_num strong:nth-child(5) {
+	background: url(../images/img/paging_last.png) no-repeat;
+}
+#art_num a {
+	width:36px; height: 35px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	line-height: 32px;
+	border: 1px solid #989898;
+	position: relative; top: -14px;
+	margin: 0px 5px 0px;
+}
 
 
 /* footer */
