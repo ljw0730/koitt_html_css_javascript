@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 애니메이션 </title>
+		<script type="text/javascript" src="prefixfree.dynamic-dom.min.js"></script>
+		<style type="text/css">
+			/* 아이콘 폰트 사용*/
+			@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+			/* entypo */
+			[class*="entypo-"]:before {
+			  font-family: 'entypo', sans-serif;
+			}
+		
+			* {margin: 0px; padding: 0px;}
+			div{
+				width: 300px; height: 300px;
+				margin: 300px auto;
+				border: 1px solid black;
+			}
+			p{
+				width: 300px; height: 300px;
+				font-size: 300px;
+				color: blue;
+				text-align: center;
+				/* 모든속성적용 2초동안변화 */
+				/* ease: 처음에는 천천히 점점 빨라지다가 다시 천천히*/
+				transition: all 2s ease;
+				border: 1px solid black;
+			}
+			p:hover {
+				transform-origin: left top;
+				transform: rotate(360deg);
+				/* 이름: aaa / 변형시간: 1s*/
+				/* normal: 애니매이션 끝나면 원래위치로 그냥 복귀 */
+				/* 애니매이션이 끝나면 다시 애니매이션으로 복귀 하고 싶다면 alternate */
+				/* 3: 3번 반복(무한으로 하고 싶다면 infinity) / ease: 처음에는 천천히 점점 빨라지다가 다시 천천히*/
+				animation: aaa 1s normal 3 ease;
+			}
+			@keyframes aaa{
+				from{
+					transform:rotate(0deg);
+				}
+				to{
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+		</div>
+	</body>
+</html>

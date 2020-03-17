@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 변형 - transform </title>
+		<script type="text/javascript" src="prefixfree.dynamic-dom.min.js"></script>
+		<style type="text/css">
+			* {margin: 0px; padding: 0px;}
+			div{
+				width: 300px; height: 300px;
+				margin: 300px auto;
+				border: 1px solid black;
+				perspective: 700px; 
+			}
+			p{
+				width: 300px; height: 300px;
+				background: blue;
+			}
+			p:hover {
+				/* x축방향으로 50px 만큼 움직인다. */
+				/* transform:translateX(50px); */
+
+				/* 2배 만큼 커진다.*/
+				/* transform:scale(2); */
+				/* 따로 따로 놓으면 가장 아래것만 적용된다.*/
+				/* 이렇게 한번에 놓으면 두개를 같이 적용할 수 있다.*/
+				/* transform:translateX(50px) scale(2); */
+				
+				/* x축을 기준으로 뒤로 45기운다.(보기에는 z축 뒤쪽으로 기운다.) */
+				/* 그냥 하면 네모로만 보이게 되고 기울기를 보고 싶으면 */
+				/* 부모에 perspective: 700px; 를 입력해야 한다. */
+				/* transform:translateX(50px) rotateX(45deg); */
+				 				
+				/* 30도 기운다. */
+				transform:translateX(50px) skew(30deg);
+				/* 왼쪽 상단을 기준으로 변형이 일어난다. */
+				transform-origin: left top;
+				
+				/* 50% 만큼 투명하게 한다. */
+				opacity: 50%
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+		</div>
+	</body>
+</html>
