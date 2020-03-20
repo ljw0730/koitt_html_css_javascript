@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 유효성 검사</title>
+		<script type="text/javascript">
+			function check() {
+				if(form.name.value=="") {
+					alert("이름을 입력해 주세요.");
+					form.name.focus();
+					return false;
+				}
+				
+				if(form.name.value.length > 4) {
+					alert("이름은 4글자 이하로 입력해 주세요.");
+					form.name.value="";
+					form.name.focus();
+					return false;
+				}
+				else {
+					alert("이름을 제대로 입력 하셨습니다.");
+					form.kor.focus();
+				}
+				
+				if(form.kor.value <0 || form.kor.value>100) {
+					alert("0~100점까지 입력가능 합니다.");
+					form.kor.value="";
+					form.kor.focus();
+				}
+			}		
+			
+		</script>
+	</head>
+	<body>
+		<h2>[ 성적 입력 ]</h2>
+		<form name="form" action="#" method="post">
+				<label for="name">학생이름</label>
+				<input type="text" name="name" id="name" /><br/>
+				
+				<label for="kor">국어점수</label>
+				<input type="text" name="kor" id="kor" /><br/>
+				
+				<label for="eng">영어점수</label>
+				<input type="text" name="eng" id="eng" /><br/>
+				
+				<label for="total">합계</label>
+				<input type="text" name="total" id="total" disabled /><br/>
+				
+				<input type="button" value="데이터 입력" onclick="check()" />
+				
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 전역변수/지역변수</title>
+	</head>
+	<body>
+		<script>
+			var g_value1=20;
+			var g_value2=30;
+			
+			function add(a, b) {
+				var local_value=10;
+				document.write("지역변수 값 : " + local_value + "</p>");
+				
+				var total=a+b;
+				document.write("합계 값 : " + total + "</p>");
+			}
+			
+			document.write("전역변수 값 : " + g_value1 + "</p>");
+			document.write("전역변수 값 : " + g_value2 + "</p>");
+			add(3, 4);
+			
+		</script>
+	
+		
+	</body>
+</html>

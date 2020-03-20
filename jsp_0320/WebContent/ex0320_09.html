@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 산술연산자</title>
+	</head>
+	<body>
+		<script>
+			var inc_data=1;
+			var dec_data=5;
+			var r1=r2=0;
+			r1 = 15%6; //3
+			
+			document.write("15%6 : " + r1 + "<br/>");	// 3
+			
+			// 먼저 변수를 사용하고 + 하므로 1출력
+			document.write("inc_data++ : " + inc_data++ + "<br/>");
+			
+			// 2인 상태에서 + 하고 변수를 사용하므로 3출력
+			document.write("++inc_data : " + ++inc_data + "<br/>");
+			
+			// 먼저 변수를 사용하고 - 하므로 5출력
+			document.write("dec_data-- : " + dec_data-- + "<br/>");
+			
+			// 4인 상태에서 - 하고 변수를 사용하므로 3출력;
+			document.write("--dec_data : " + --dec_data + "<br/>");
+			
+			// 위의 연산결과 inc_data = 3, dec_data = 3 인 상태 
+			r2 = inc_data * dec_data;
+			document.write("inc_data * dec_data = " + r2 + "<br/");
+			
+			
+		</script>
+		<button onclick="get_grade(50,60)"> 함수호출버튼 </button>
+		
+	</body>
+</html>
