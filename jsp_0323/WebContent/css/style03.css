@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+form {
+	width: 1000px;
+	fort-size: 24px;
+}
+
+label {
+	width: 200px; height: 30px; 
+	color: green;
+	fort-size: 24px;
+	margin : 20px;
+}
+
+input {
+	height: 30px;
+	font-size: 24px;
+	margin : 20px;
+}
+
+input[type="reset"] {
+	width: 100px; height: 60px;
+}
+input[type="button"] {
+	width: 100px; height: 60px;
+}

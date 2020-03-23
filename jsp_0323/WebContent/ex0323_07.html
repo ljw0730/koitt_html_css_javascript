@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - Date()/switch)</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var day;
+			var week= new Date().getDay(); //0(일요일)~6(토요일)
+			// 달력은 일/월/화/수/목/금/토 순으로 나열되어 있으므로...
+			
+			switch(week) {
+				case 0 :
+					day = "일요일";
+					break;
+				case 1 :
+					day = "월요일";
+					break;
+				case 2 :
+					day = "화요일";
+					break;
+				case 3 :
+					day = "수요일";
+					break;
+				case 4 :
+					day = "목요일";
+					break;
+				case 5 :
+					day = "금요일";
+					break;
+				case 6 :
+					day = "토요일";
+					break;
+				
+				default:
+					day = "잘못 입력됨";
+					break;
+			}
+			
+			document.write("오늘의 요일은 <strong>" + day + "</strong> 입니다.<br/>");
+			document.write("숫자는 " + week + " 입니다.");
+		 
+		</script>
+		
+	</body>
+</html>
