@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/custom.js"></script>
+		<title>자바스크립트 - 정규식표현</title>
+	</head>
+	<body>
+		<form name="join" action="http://www.naver.com" method="get">
+			<label for="j_id">아이디</label>
+			<input type="text" name="j_id" id="j_id" /> <br/> 
+			
+			<label for="j_pw">패스워드</label>
+			<input type="text" name="j_pw" id="j_pw" /> <br/>
+			
+			<label for="j_pw2">패스워드 확인</label>
+			<input type="text" name="j_pw2" id="j_pw2" /> <br/>
+			
+			<label for="j_name">이름</label>
+			<input type="text" name="j_name" id="j_name" /> <br/>
+			
+			<label for="j_age">나이</label>
+			<input type="text" name="j_age" id="j_age" /> <br/>
+			
+			<label for="">성별</label><br/>
+			<input type="radio" name="gender" id="male" value="male" />
+			<label for="male">남</label>
+			<input type="radio" name="gender" id="female" value="female" />
+			<label for="female">여</label><br/>
+			
+			<label for="">취미</label><br/>
+			<input type="checkbox" name="hobby" id="reading" value="reading" />
+			<label for="reading">독서</label>
+			<input type="checkbox" name="hobby" id="bicycle" value="bicycle" />
+			<label for="bicycle">자전거</label>
+			<input type="checkbox" name="hobby" id="game" value="game" />
+			<label for="game">게임</label>
+			<input type="checkbox" name="hobby" id="running" value="running" />
+			<label for="running">달리기</label> <br/>
+			
+			<input type="button" value="전송" onclick="check()"/>
+			<input type="reset" value="취소" />
+								
+		</form>
+	</body>
+</html>

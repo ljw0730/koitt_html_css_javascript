@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 배열</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var city=["Seoul", "Busan", "Incheon"];
+			
+			// 이렇게 해도 됨.
+			// var city = [];
+			// city[0] = "Seoul";
+			// city[2] = "Busan";
+			// city[3] = "incheon";
+			
+			function printArr() {
+				for(var i = 0; i < city.length; i++) {
+					document.write("배열 데이터 [" + i + "] : " + city[i] + "<br/>");
+				}
+			}
+		
+			printArr();
+		
+		</script>		
+		
+	</body>
+</html>

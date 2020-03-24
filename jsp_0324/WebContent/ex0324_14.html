@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 배열 객체</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 객체로 할때는 ( ) 임을 주의
+			var num = new Array(1, 5, 10, 20, 30, 90, 110, 120, 150, 200);
+			var sum = 0;
+			
+			function printArr() {
+				for(var i = 0; i < num.length; i++) {
+					sum += num[i];
+					
+					document.write("["+ i + "]번째 배열 데이터 : " + num[i] + "<br/>");
+				}
+				document.write("배열 데이터의 총 합계 : " + sum +"<br/>");
+			}
+			printArr();
+		
+		</script>		
+		
+	</body>
+</html>

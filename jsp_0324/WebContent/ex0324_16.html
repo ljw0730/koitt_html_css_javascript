@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 배열 1~45 저장 후 합계 구하기</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 배열 1~45 저장 후 합계 구하기
+			
+			var lotto=[];
+			function insertNum() {
+				var i;
+				for(i = 0; i < 45; i++) {
+					lotto[i] = i+1;
+				}
+				printNum();
+			}
+			
+			function printNum() {
+				var i;
+				for(i = 0; i < lotto.length; i++) {
+					document.write("lotto [" + i + "] : " + lotto[i] + "<br/>");
+				}
+				addNum();
+			}
+			
+			function addNum() {
+				var i;
+				var sum = 0;
+				for(i = 0; i < lotto.length; i++) {
+					sum += lotto[i];
+				}
+				
+				document.write("총 합계의 결과 값 : " + sum + "<br/>");
+				document.write("<a href='ex0324_16.html'>돌아가기</a><br/>");
+			}
+			
+		</script>		
+
+		<button onclick="insertNum()">배열 객체선언/출력/연산</button>
+		
+	</body>
+</html>

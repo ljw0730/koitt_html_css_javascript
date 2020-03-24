@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 함수를 변수에 할당</title>
+	</head>
+	<body>
+		<script>
+			function add(x, y){
+				return x+y;
+			}
+			
+			// 변수에 함수를 넣을 수 있다.
+			// 쉽게 생각해 함수명을 복사 한다고 생각해보자.
+			var a1 = add;
+			var a2 = add;
+			
+			document.write("a1 결과 값 : " + a1(10, 100) + "<br/>");
+			document.write("a2 결과 값 : " + a2(20, 200) + "<br/>");
+		
+		</script>
+	</body>
+</html>

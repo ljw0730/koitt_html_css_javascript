@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 배열 연습</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 배열 1~200 저장 후 배열 홀수 번째 데이터 0으로 초기화
+			// 3의 배수를 초기화 해서 출력하시오.
+			// 합계버튼 5의 배수만 합계를 구해보시오.
+			// 강사님 ver
+			
+			var num=[];
+			var i=0;
+			
+			function insertNum() {
+				for(i = 0; i < 45; i++) {
+					num[i] = i+1;
+					document.write("num 데이터 값 : " + num[i] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+					if(num[i]%5 == 0) {
+						document.write("<br/>");
+					}
+				}
+			}
+			
+			// 모든데이터 초기화
+			function allDelNum() {
+				for(i = 0; i < num.length; i++) {
+					num[i] = 0;
+				}
+				printNum();
+			}
+			
+			// 3의 배수 초기화
+			function threeDelNum() {
+				for(i = 0; i < num.length; i++) {
+					if(num[i]%3 == 0) {
+						num[i] = 0;
+					}
+					continue;
+				}
+				printNum();
+			}
+			
+			// 5의 배수 합계
+			function addNum() {
+				var sum = 0;
+				for(i = 0; i < num.length; i++) {
+					if(num[i]%5 == 0) {
+						sum = sum + num[i];
+					}
+					continue;
+				}
+				document.write("5의 배수의 합 : " + sum + "<br/>");
+				document.write("<br/>");
+				document.write("num 배열크기 : " + num.length + "<br/>");
+				document.write("<a href='ex0324_19.html'>돌아가기</a>");
+				
+			}
+			
+			// 배열 자체 초기화(배열 갯수 0개로 초기화)
+			function delArrayNum() {
+				num.length = 0;
+				printNum();
+			}
+			
+			// 배열전체 문자열 변환
+			function joinNum() {
+				var j_array = num.join();
+				var j_array2 = num.join("-");
+				var j_array3 = num.join("/");
+				var j_array4 = num.join(" 그리고 ");
+				document.write("조인결과 : " + j_array + "<br/>");
+				document.write("조인결과 : " + j_array2 + "<br/>");
+				document.write("조인결과 : " + j_array3 + "<br/>");
+				document.write("조인결과 : " + j_array4 + "<br/>");
+				document.write("<a href='ex0324_19.html'>돌아가기</a>");
+			}
+			
+			function printNum() {
+				for(i=0; i < num.length; i++) {
+					document.write("num 데이터 값 : " + num[i] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+					if((i+1)%5 == 0) {
+						document.write("<br/>");
+					}
+				}
+				document.write("<br/>");
+				document.write("num 배열크기 : " + num.length + "<br/>");
+				document.write("<a href='ex0324_19.html'>돌아가기</a>");
+			}
+			
+			insertNum();
+			
+		</script>		
+
+		<button onclick="allDelNum()">모든데이터 삭제</button><br/>
+		<button onclick="threeDelNum()">3의 배수 초기화</button><br/>
+		<button onclick="addNum()">5의 배수 합계 구하기</button><br/>
+		<button onclick="delArrayNum()">배열 갯수 0개로 초기화</button><br/>
+		<button onclick="joinNum()">배열전체 문자열</button>
+		
+	</body>
+</html>
+

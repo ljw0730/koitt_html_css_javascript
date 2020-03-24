@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 함수반환값</title>
+	</head>
+	<body>
+		<script>
+			var result;
+			function add(name, n) {
+				
+				document.write(name + " 학생이 1부터 " + n + "까지 덧셈 수행<br/>");
+				var sum = 0;
+				for(var i = 1; i<=n; i++) {
+					sum += i;
+				}
+				
+				return sum;
+			}
+			
+			result = add("홍길동", 10);
+			document.write("결과 값 : " + result + "<br/>");
+			document.write("===================================<br/>");
+			result = add("이순신", 100);
+			document.write("결과 값 : " + result + "<br/>");
+			
+			
+			// add2 -> 15, 150까지 더하거ㅣ를 구하고 싶다라는 함수 구성
+			// mul -> 두수를 매개변수로 받아서 곱하기 리턴
+			
+			var n1 = prompt("첫번째 숫자");
+			var n2 = prompt("두번째 숫자");
+			function add2(n1, n2) {
+				var sum = 0;
+				for(var i = n1; i <= n2; i++) {
+					sum += i;
+				}
+				
+				return sum;
+			}
+			document.write("===================================<br/>");
+			result = add2(15, 150);
+			document.write(n1 + " ~ " + n2 + "까지의 합<br/>");
+			document.write("결과 값 : " + result + "<br/>");
+			
+			function mul(n1, n2) {
+				return (n1*n2);
+			}
+			document.write("===================================<br/>");
+			document.write(n1 + ", " + n2 + "의 곱<br/>");
+			result = mul(15, 150);
+			document.write("결과 값 : " + result + "<br/>");
+			
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 무명함수</title>
+	</head>
+	<body>
+		<script>
+			var text1 = "함수 선언전 호출 에러";
+			var text2 = "함수 산언후 호출만 가능";
+			
+			// printMsg(text1); // 무명함수는 함수 선언전에 호출 될 수 없다.
+			
+			var printMsg = function(msh) {
+				docuemet.write("함수 호출 메세지: " + msg + "<br/>");
+			}		
+			
+			printMsg(text2);
+		</script>
+	</body>
+</html>

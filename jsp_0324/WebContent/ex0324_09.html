@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 매개변수 갯수 적을때 처리방법</title>
+	</head>
+	<body>
+		<script>
+			
+			function add(x, y, z){
+				var sum;
+				if(x==undefined && y==undefined && z==undefined) {
+					sum = 1;
+				}
+				else if(y==undefined && z==undefined) {
+					sum = x+1;	
+				}
+				else if(z==undefined) {
+					sum = x+y;
+				}
+				else{
+					sum = x+y+z;
+				}
+				return sum;
+			}
+			
+			
+			// 함수에 똑같은 이름이 있다고 하면 가장 마지막에 선언되어 있는것만 사용된다.
+			var r0 = add();
+			var r1 = add(1);
+			var r2 = add(2,3);
+			var r3 = add(4,5,6);
+			// 매개변수가 4개 이지만 해당 함수가 없으므로
+			// 앞에 3개만 이용해 add(x, y, z) 함수가 사용된다.
+			var r4 = add(7,8,9,10);
+			
+			document.write("r0 결과 값 : " + r0 + "<br/>");
+			document.write("r1 결과 값 : " + r1 + "<br/>");
+			document.write("r2 결과 값 : " + r2 + "<br/>");
+			document.write("r3 결과 값 : " + r3 + "<br/>");
+			document.write("r4 결과 값 : " + r4 + "<br/>");
+		
+		</script>
+	</body>
+</html>
