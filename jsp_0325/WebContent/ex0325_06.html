@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - indexof()</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			// k : 국문학과, e : 영문학과, m : 수학과, c : 컴퓨터학과
+			// 컴퓨터 학과 학생들만 뽑아서 배열을 만들어 보세요.
+			var stu_num = ["k202001", "k202002", "e202001",
+							"e202002", "e202003", "m202001",
+							"m202002", "c202001", "c202002",
+							"k202003", "e202004", "c202003"];
+						
+			function com_major() {
+				var c_stu = [];
+				
+				for(var i = 0; i < stu_num.length; i++) {
+					var find_str = "c"
+					
+					if(stu_num[i].indexOf(find_str) != -1) {
+						c_stu.push(stu_num[i]);
+					}
+				}
+				
+				document.write(c_stu);
+				document.write("<br/><a href='ex0325_06.html'>돌아가기</a><br/>");
+			}	
+			
+			document.write(stu_num + "<br/>");
+		</script>
+		
+		<button onclick="com_major()">컴퓨터학과 학생 배열만들기</button>
+		
+	</body>
+</html>

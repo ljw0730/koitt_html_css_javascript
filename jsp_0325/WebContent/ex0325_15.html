@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 객체 생성 - 생성자함수 이용 - 실습</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+	
+		<table>
+			<tr>
+				<th>학번</th>
+				<th>이름</th>
+				<th>국어</th>
+				<th>영어</th>
+				<th>합계</th>
+				<th>평균</th>
+			</tr>
+			<tr>
+				<td id="h_hak"></td>
+				<td id="h_name"></td>
+				<td id="h_kor">a</td>
+				<td id="h_eng">a</td>
+				<td id="h_total">a</td>
+				<td id= h_avg>a</td>
+			</tr>
+			<tr>
+				<td id="k_hak">a</td>
+				<td id="k_name">a</td>
+				<td id="k_kor">a</td>
+				<td id="k_eng">a</td>
+				<td id="k_total">a</td>
+				<td id= k_avg>a</td>
+			</tr>
+			<tr>
+				<td id="y_hak">a</td>
+				<td id="y_name">a</td>
+				<td id="y_kor">a</td>
+				<td id="y_eng">a</td>
+				<td id="y_total">a</td>
+				<td id= y_avg>a</td>
+			</tr>
+		</table>
+		
+		<script type="text/javascript">
+			function input_stu(hak_num, name, kor, eng) {
+				this.hak_num = hak_num;
+				this.name = name;
+				this.kor = kor;
+				this.eng = eng;
+				
+				this.total = function () {
+					return this.kor+this.eng;
+				};
+				this.avg = function () {
+					return this.total()/2;
+				}
+			}
+			
+			var hong = new input_stu(1, "홍길동", 100, 80);
+			var kang = new input_stu(2, "강감찬", 99, 87);
+			var yoo = new input_stu(3, "유관순", 100, 99);
+						
+			document.getElementById("h_hak").textContent=hong.hak_num;
+			document.getElementById("h_name").textContent=hong.name;
+			document.getElementById("h_kor").textContent=hong.kor;
+			document.getElementById("h_eng").textContent=hong.eng;
+			document.getElementById("h_total").textContent=hong.total();
+			document.getElementById("h_avg").textContent=hong.avg();
+			
+			document.getElementById("k_hak").textContent=kang.hak_num;
+			document.getElementById("k_name").textContent=kang.name;
+			document.getElementById("k_kor").textContent=kang.kor;
+			document.getElementById("k_eng").textContent=kang.eng;
+			document.getElementById("k_total").textContent=kang.total();
+			document.getElementById("k_avg").textContent=kang.avg();
+			
+			document.getElementById("y_hak").textContent=yoo.hak_num;
+			document.getElementById("y_name").textContent=yoo.name;
+			document.getElementById("y_kor").textContent=yoo.kor;
+			document.getElementById("y_eng").textContent=yoo.eng;
+			document.getElementById("y_total").textContent=yoo.total();
+			document.getElementById("y_avg").textContent=yoo.avg();
+			
+		</script>		
+		
+		
+	</body>
+</html>

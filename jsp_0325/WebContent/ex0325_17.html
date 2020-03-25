@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - Date()</title>
+	</head>
+	<body>
+		<p id ="digClock"> </p>
+		
+		<script type="text/javascript">
+		
+		
+			function digClock() {
+				var today = new Date();
+				var time = today.getHours() + "시 " + today.getMinutes() + "분 "
+							+ today.getSeconds() + "초";
+				
+				document.getElementById("digClock").innerHTML=time;
+				
+				// digclock()을 1초마다 호출하라
+				setTimeout("digClock()", 1000);
+				
+ 			}
+			
+			digClock();
+			
+		</script>
+		
+		
+	</body>
+</html>
