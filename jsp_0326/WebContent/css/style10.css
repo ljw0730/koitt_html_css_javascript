@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+#top_table {
+	width: 757px; height: 95px;
+	border-collapse: collapse;
+	margin: 0px auto 80px;
+}
+
+#top_table tr th {
+	width:224px; height: 95px;
+	font-size: 15px;
+	color: #fff;
+	background: #2c2b2b;
+	
+	
+}
+
+#top_table tr td {
+	height: 47px;
+	font-size: 14px;
+	color: #fff;
+	background: #585858;
+}
+
+#bottom_table {
+	width: 650px;
+	border-collapse: collapse;
+	margin: 0 auto;
+	
+	border: 1px solid red;
+}
+#bottom_table tr th {
+	height: 47px;
+	font-size: 13px;
+	background-image: url("../images/Tb_bg.png");
+	border: 1px solid #c9c9c9;
+	
+}
+#bottom_table tr th:nth-child(1) {
+	width: 247px;	
+	
+}
+#bottom_table tr th:nth-child(2) {
+	width: 100px;	
+	
+}
+#bottom_table tr th:nth-child(3) {
+	width: 120px;	
+	
+}
+#bottom_table tr th:nth-child(4) {
+	width: 64px;	
+	
+}
+#bottom_table tr th:nth-child(5) {
+	width: 89px;	
+	
+}
+#bottom_table tr th:nth-child(6) {
+	width: 49px;	
+	
+}
+
+#bottom_table tr td {
+	height: 63px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 700;
+	color:#767676;
+	paading-left: 8px;
+	border: 1px solid #c9c9c9;
+}
+#bottom_table tr td:nth-of-type(1) {
+	text-align: left;
+}
+#bottom_table tr td span{
+	display:inline-block;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 0;
+	paading-left: 8px;
+}
+#bottom_table tr td:nth-of-type(2) {
+	text-align: right;	
+}
+#bottom_table tr td:nth-of-type(5) {
+	text-align: right;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

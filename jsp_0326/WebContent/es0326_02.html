@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문서 객체 스타일 변경하기</title>
+		<style type="text/css">
+			img { 
+				width: 200px;
+			}
+		</style>
+		<script type="text/javascript">
+			function imgExpansion() {
+				document.getElementById("img").style.width="600px";
+			}
+			
+			function imgReset() {
+				document.getElementById("img").style.width="";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<img id="img" alt="벚꽃사진" src="images/s01.jpg" />
+		
+		<br/>
+		<button onclick="imgExpansion()">이미지 확대하기(600px)</button>
+		<button onclick="imgReset()">이미지 원래대로</button>
+	
+	</body>
+</html>

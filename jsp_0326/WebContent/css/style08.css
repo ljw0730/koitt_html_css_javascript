@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+ul{
+	list-style-type: none;
+	width: 350px; height: 80px; 
+	margin : 0 auto;
+}
+
+li{
+	float: left;
+	width: 80px; height: 80px;
+	color: #efefef;
+	text-align: center;
+	background: skyblue;
+	box-sizing: border-box;
+	padding-top : 30px;
+}
+
+p{
+	width:400px; height: 30px;
+	text-align: center;
+	margin : 0 auto;
+}

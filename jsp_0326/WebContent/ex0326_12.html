@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>제이쿼리 - checkbox 체크 여부에 따른 이벤트</title>
+		<!-- 제이쿼리를 사용할 수 있게 끔하는 js 파일 -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<!-- 접두어를 자동으로 입력해 주는 js 파일 -->
+		<script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+		
+		<script type="text/javascript" src="js/custom10.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style10.css" />
+		
+	</head>
+	<body>
+		
+		<form name="form" action="" method="get">
+			<table id="top_table">
+				<tr>
+					<th rowspan="2">Prepaid Data SIM</th>
+					<td>
+						<input type="checkbox" name="d_sim" id="one_day" value="one_day" />
+						<label for="one_day"> ￦6,600 1일(24시간) </label>
+					</td>
+					<td>
+						<input type="checkbox" name="d_sim" id="five_day" value="five_day" />
+						<label for="five_day"> ￦27,500 5일(120시간)  </label>
+					</td>
+					<td>
+						<input type="checkbox" name="d_sim" id="ten_day" value="ten_day" />
+						<label for="ten_day"> ￦38,500 10일(240시간) </label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="d_sim" id="twenty_day" value="twenty_day" />
+						<label for="twenty_day"> ￦60,500 20일(480시간) </label>
+					</td>
+					<td colspan="2">
+						<input type="checkbox" name="d_sim" id="thirty_day" value="thirty_day" />
+						<label for="thirty_day"> ￦71,500 30일(720시간) </label>
+					</td>
+				</tr>
+			</table>
+		
+			<table id="bottom_table">
+				<tr id="table_title">
+					<th>상품</th>
+					<th>이용요금</th>
+					<th>임대기간요금</th>
+					<th>수량</th>
+					<th>합계</th>
+					<th>삭제</th>
+				</tr>
+				<tr id="dsim_one_day">
+					<td>
+						Prepaid Data SIM 1일(24시간)
+						<span>본 상품은 1일 동안 이용 가능합니다.</span>
+					</td>
+					<td>6,600원/1개</td>
+					<td> - </td>
+					<td>
+						<select>
+							<option>선택</option>
+							<option>1개</option>
+							<option>2개</option>
+							<option>3개</option>
+						</select>
+					</td>
+					<td>0원</td>
+					<td>
+						<img alt="" src="images/btn_close.gif" /> 
+					</td>			
+				</tr>
+				<tr id="dsim_five_day">
+					<td>
+						Prepaid Data SIM 5일(120시간)
+						<span>본 상품은 5일 동안 이용 가능합니다.</span>
+					</td>
+					<td>27,500원/1개</td>
+					<td> - </td>
+					<td>
+						<select>
+							<option>선택</option>
+							<option>1개</option>
+							<option>2개</option>
+							<option>3개</option>
+						</select>
+					</td>
+					<td>0원</td>
+					<td>
+						<img alt="" src="images/btn_close.gif" /> 
+					</td>			
+				</tr>
+				<tr id="dsim_ten_day">
+					<td>
+						Prepaid Data SIM 10일(240시간)
+						<span>본 상품은 10일 동안 이용 가능합니다.</span>
+					</td>
+					<td>38,500원/1개</td>
+					<td> - </td>
+					<td>
+						<select>
+							<option>선택</option>
+							<option>1개</option>
+							<option>2개</option>
+							<option>3개</option>
+						</select>
+					</td>
+					<td>0원</td>
+					<td>
+						<img alt="" src="images/btn_close.gif" /> 
+					</td>			
+				</tr>
+				<tr id="dsim_twenty_day">
+					<td>
+						Prepaid Data SIM 20일(480시간)
+						<span>본 상품은 20일 동안 이용 가능합니다.</span>
+					</td>
+					<td>60,500원/1개</td>
+					<td> - </td>
+					<td>
+						<select>
+							<option>선택</option>
+							<option>1개</option>
+							<option>2개</option>
+							<option>3개</option>
+						</select>
+					</td>
+					<td>0원</td>
+					<td>
+						<img alt="" src="images/btn_close.gif" /> 
+					</td>			
+				</tr>
+				<tr id="dsim_thirty_day">
+					<td>
+						Prepaid Data SIM 30일(720시간)
+						<span>본 상품은 30일 동안 이용 가능합니다.</span>
+					</td>
+					<td>71,500원/1개</td>
+					<td> - </td>
+					<td>
+						<select>
+							<option>선택</option>
+							<option>1개</option>
+							<option>2개</option>
+							<option>3개</option>
+						</select>
+					</td>
+					<td>0원</td>
+					<td>
+						<img alt="" src="images/btn_close.gif" /> 
+					</td>			
+				</tr>
+			
+			</table>
+		
+		
+		</form>
+		
+		
+	</body>
+</html>

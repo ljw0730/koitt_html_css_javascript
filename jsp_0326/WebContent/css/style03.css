@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+li{
+	font-size: 20px;
+	margin: 10px;
+}
+
+#q1 {
+	display: inline;
+}
+#q2 {
+	display: inline;
+}
+span{
+	display: inline;
+}
