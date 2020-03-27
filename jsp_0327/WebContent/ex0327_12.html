@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 애니매이션 (사진 움직이기)</title>
+		<link rel="stylesheet" type="text/css" href="css/style12.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/custom12.js"></script>
+	</head>
+	<body>
+		<!-- 
+			1. 이미지 1번은 left 600px 이미지를 원형으로 변형
+			2. 이미지 2번은 left 300px 30px 둥글게 번형, 투명도 90%
+		 -->
+	
+		<div id="d01">
+			<img id="img01" alt="" src="images/img01.jpg"></br>
+			<img id="img02" alt="" src="images/img02.jpg">
+		</div>
+		<div id=d02>
+			<button id="bnt01" onclick="move1()"> 이미지 둥글게 1 </button>
+			<button id="bnt02" onclick="move2()"> 이미지 둥글게 2 </button>
+			<button id="bnt03" onclick="init()"> 초기화 </button>
+		</div>
+	</body>
+</html>

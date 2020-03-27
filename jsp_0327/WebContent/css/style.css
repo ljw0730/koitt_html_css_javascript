@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+img {
+	width: 640px;
+	
+	border: 2px solid red;
+}
+
+p {
+	font-size: 20px;
+}

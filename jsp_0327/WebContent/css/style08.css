@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div {
+	width: 600px;
+	margin: 50px auto;
+	position: relative;
+}
+
+img {
+	width: 600px;
+	position: relative;
+	
+	border: 3px solid red; 
+}
+
+#d01 {
+	width: 300px; height: 300px;
+	border: 3px solid red;
+	background: yellow;
+	
+	border: 1px solid black;
+}

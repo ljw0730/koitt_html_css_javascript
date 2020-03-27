@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 - 애니매이션 (메뉴부분)</title>
+		<link rel="stylesheet" type="text/css" href="css/style11.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/prefixfree.dynamic-dom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/custom11.js"></script>
+	</head>
+	<body>
+		<div id="init">
+			<button onclick="back('#moving img')">초기화 버튼</button>
+		</div>
+		<div id="moving">
+			<img alt="" src="images/img01.jpg" onclick="move(this, 3000)" /><br/>
+			<img alt="" src="images/img02.jpg" onclick="move(this, 1000)" /><br/>
+		</div>
+	</body>
+</html>
