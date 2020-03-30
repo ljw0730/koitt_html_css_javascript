@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>아이디 중복확인 하는 html</title>
+		<script type="text/javascript">
+			function id_check_db() {
+				//db와 연동 후 아이디가 있는지 확인하는 형태
+				//가 되어야 하는데 현재 db연동이 안되어 있지 않으므로
+				//p 태그에 글자를 넣는 것으로 대체
+				document.getElementById("ch_text").innerHTML="아이디 사용이 가능합니다.";
+			}		
+		
+			// 메인페이지에 데이터 값 넘기기
+			function join_datainput() {
+				// j_id에 있는 값을 원래 창의 ch_id창에 넣기
+				opener.document.getElementById("j_id").value = document.getElementById("ch_id").value;
+				
+				//창 닫기
+				window.close();
+			}
+		
+		
+		
+		</script>
+	</head>
+	<body>
+		<h1>아이디 중복체크</h1>
+		<form action="" name="form">
+			<label>아이디중복체크</label>
+			<input type="text" id="ch_id" />
+			<input type="button" value="아이디 확인" onclick="id_check_db()" /><br/>
+			<p id="ch_text"></p>
+			<br/>
+			
+			<input type="button" value="메인으로 이동" onclick="join_datainput()" />
+		
+		
+		</form>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>부모창의 데이트를 자식창에 보내지</title>
+		<script type="text/javascript">
+			var openpop;
+			
+			function open_p() {
+				// 새창 띄우기 (팝얼할 파일이름, 팝업창 아이디, 팝업창 옵션)
+				openpop = window.open(
+					"l_pop2.html",
+					"id_check",
+					"width=600, height=400, resizable=no, scrollbars=no"
+				);
+			}
+			
+			function pop_data() {
+				openpop.document.getElementById("ch_id").value=document.getElementById("j_id").value;
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		<h1>회원가입</h1>
+		<form action="join_com.jsp" name="join" method="get">
+			<label for="j_id">아이디 : </label>
+			<input type="text" name="j_id" id="j_id" />
+			<input type="button" onclick="open_p()" value="팝업창 띄우기" /><br/>
+			
+			<label for="j_name">이름 : </label>
+			<input type="text" name="j_name" id="j_name" />	<br/>
+			
+			<input type="button" onclick="pop_data()" value="전송" />
+			<input type="reset" value="취소" />		
+			
+		</form>
+	</body>
+</html>
